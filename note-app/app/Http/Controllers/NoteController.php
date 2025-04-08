@@ -7,50 +7,31 @@ use Illuminate\Http\Request;
 
 class NoteController extends Controller
 {
-    public function index()
-    {
-        return 'index';
+    public function index() {
+        return view('note.index');
     }
     
-    public function create()
-    {
-        return 'create';
+    public function create() {
+        return view('note.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
+    public function store() {
+        return 'store';
     }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show($id)
-{
-    return 'show';
-}
-
-public function edit($id)
-{
-    return 'edit';
-}
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Note $note)
-    {
-        //
+    
+    public function show($id) {
+        return view('note.show');
     }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Note $note)
-    {
-        //
+    
+    public function edit($id) {
+        return view('note.edit');
+    }
+    
+    public function update($id) {
+        return 'update';
+    }
+    
+    public function destroy($id) {
+        return 'destroy';
     }
 }
