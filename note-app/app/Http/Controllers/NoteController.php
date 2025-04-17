@@ -9,10 +9,12 @@ class NoteController extends Controller
 {
     public function index() {
         return view('note.index');
+
     }
     
     public function create() {
         return view('note.create');
+
     }
 
     public function store() {
@@ -21,10 +23,12 @@ class NoteController extends Controller
     
     public function show($id) {
         return view('note.show');
+
     }
     
     public function edit($id) {
         return view('note.edit');
+
     }
     
     public function update($id) {

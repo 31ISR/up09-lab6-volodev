@@ -7,6 +7,13 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="antialiased">
+        @session('massege')
+            <div class="seccess-message">
+                {{ Session('message') }}
+            </div>
+        @endsession
+
         {{ $slot }}
+        
     </body>
 </html>

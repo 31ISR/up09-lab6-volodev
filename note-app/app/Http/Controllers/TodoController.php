@@ -12,7 +12,7 @@ class TodoController extends Controller
      */
     public function index()
     {
-        return view('todo.index');
+        return 'index';
     }
 
     /**
@@ -20,7 +20,7 @@ class TodoController extends Controller
      */
     public function create()
     {
-        return view('todo.create');
+        return 'create';
     }
 
     /**
@@ -36,7 +36,7 @@ class TodoController extends Controller
      */
     public function show(Todo $todo)
     {
-        return view('todo.show');
+        return 'show';
     }
 
     /**
@@ -44,7 +44,7 @@ class TodoController extends Controller
      */
     public function edit(Todo $todo)
     {
-        return view('todo.edit');
+        return 'edit';;
     }
 
     /**
